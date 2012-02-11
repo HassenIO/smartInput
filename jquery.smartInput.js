@@ -4,12 +4,12 @@
 		 * Set default options.
 		 */
 		var defaults = {
-			counterField:		false,
-			labelInside:		false,
-			labelColor:		"#d0d0d0",
-			match:			false,
-			matchClass:		"matched-input",
-			maxChars:		140,
+			counterField:     false,
+			labelInside:      false,
+			labelColor:       "#d0d0d0",
+			match:            false,
+			matchClass:       "matched-input",
+			maxChars:         140,
 			onLimitReach:		function(){},
 			strongLimit:		false
 		};
@@ -32,7 +32,6 @@
 			 */
 			if(options.maxChars && options.counterField)
 			{
-            console.log(options.counterField);
 				/*
 				 * Init the chars left value.
 				 */
@@ -113,7 +112,7 @@
 				/*
 				 * On focus or blur, display the label or not.
 				 */
-				$("input").focus(function(){
+				$thiz.focus(function(){
 
 					var alt = $thiz.attr("alt");
 					var value = $thiz.attr("value");
